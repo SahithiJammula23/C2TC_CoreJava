@@ -1,28 +1,18 @@
 package com.cg.multipleinheritance;
-
-class Dad{
-	void snoring() {
-		System.out.println("Yes, I have the habit of snoring");
-	}
+interface Dad{
+	void snoring();
 }
-class Mom{
-	void snoring() {
-		System.out.println("Yes, I do have that habit");
-	}
+interface Mom{
+	void snoring();
 }
-class You{
-	void snoring() {
-		System.out.println("No, I do not have that habit");
+class You implements Dad,Mom{
+	public void snoring() {
+		System.out.println("My Dad and Mom have that habit");
 	}
 }
 public class MultipleInheritance {
 
 	public static void main(String[] args) {
-		Dad d = new Dad();
-		d.snoring();
-		
-		Mom m = new Mom();
-		m.snoring();
 		
 		You y= new You();
 		y.snoring();
