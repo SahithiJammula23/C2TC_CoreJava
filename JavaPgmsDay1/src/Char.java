@@ -1,20 +1,17 @@
 
 public class Char {
 
-	public static void main(String[] args) {
-			char ch;
-			
-			ch = 'a';
-			System.out.println(ch);
-			
-			ch = 79;
-			System.out.println(ch);
-			
-			int i;
-			for (i =30; i<=50;i++) {
-				ch= (char)i;
-				System.out.println(ch);
-			}
-	}
+	public static void main(String[] args) { 
+		  
+		        char char1='a';  
+		        char char2='A';  
+		          
+		  
+		        System.out.println("char1: "+char1);  
+		        System.out.println("char2: "+char2);                  
+		    }  
+		    
 }
+
+	
 	
